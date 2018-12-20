@@ -52,7 +52,7 @@ func TestCaptchaCasePatternEqualOneAndOperand1Equal1AndOperatorEqual1AndOperand2
 	}
 }
 
-func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equal6(t *testing.T) {
+func TestCaptchaCasePatternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equal6(t *testing.T) {
 	expect := "1 + six"
 	result := main.Captcha(1, 1, 1, 6)
 
@@ -61,7 +61,7 @@ func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equ
 	}
 }
 
-func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual1AndOperandEqual7(t *testing.T) {
+func TestCaptchaCasePatternEqual1AndOperand1Equal1AndOperatorEqual1AndOperandEqual7(t *testing.T) {
 	expect := "1 + seven"
 	result := main.Captcha(1, 1, 1, 7)
 
@@ -70,7 +70,7 @@ func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual1AndOperandEqua
 	}
 }
 
-func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equal8(t *testing.T) {
+func TestCaptchaCasePatternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equal8(t *testing.T) {
 	expect := "1 + eight"
 	result := main.Captcha(1, 1, 1, 8)
 
@@ -79,7 +79,7 @@ func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equ
 	}
 }
 
-func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equal9(t *testing.T) {
+func TestCaptchaCasePatternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equal9(t *testing.T) {
 	expect := "1 + nine"
 	result := main.Captcha(1, 1, 1, 9)
 
@@ -88,7 +88,7 @@ func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equ
 	}
 }
 
-func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual2AndOperand2Equal1(t *testing.T) {
+func TestCaptchaCasePatternEqual1AndOperand1Equal1AndOperatorEqual2AndOperand2Equal1(t *testing.T) {
 	expect := "1 - one"
 	result := main.Captcha(1, 1, 2, 1)
 
