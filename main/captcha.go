@@ -26,56 +26,66 @@ const (
 // Captcha xxx
 func Captcha(pattern, operand1, operator, operand2 int) string {
 
-	result := strconv.Itoa(operand1)
-	result += " "
+	rOperand1 := strconv.Itoa(operand1)
+	rOperand2 := ""
+	rOperator := ""
 
 	if Plus == operator {
-		result += "+ "
+		rOperator = "+"
 	}
 
 	if Minus == operator {
-		result += "- "
+		rOperator = "-"
 	}
 
 	if Multiply == operator {
-		result += "* "
+		rOperator = "*"
 	}
 
 	if operand2 == 1 {
-		result += "one"
+		rOperand2 = "one"
 	}
 
 	if operand2 == 2 {
-		result += "two"
+		rOperand2 = "two"
 	}
 
 	if operand2 == 3 {
-		result += "three"
+		rOperand2 = "three"
 	}
 
 	if operand2 == 4 {
-		result += "four"
+		rOperand2 = "four"
 	}
 
 	if operand2 == 5 {
-		result += "five"
+		rOperand2 = "five"
 	}
 
 	if operand2 == 6 {
-		result += "six"
+		rOperand2 = "six"
 	}
 
 	if operand2 == 7 {
-		result += "seven"
+		rOperand2 = "seven"
 	}
 
 	if operand2 == 8 {
-		result += "eight"
+		rOperand2 = "eight"
 	}
 
 	if operand2 == 9 {
-		result += "nine"
+		rOperand2 = "nine"
 	}
 
-	return result
+	if PatternNumOperStr == pattern {
+		return rOperand1 + " " + rOperator + " " + rOperand2
+	}
+
+	if PatternStrOperNum == pattern {
+		return rOperand2 + " " + rOperator + " " + rOperand1
+	}
+
+	return ""
+
 }

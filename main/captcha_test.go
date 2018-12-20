@@ -309,3 +309,12 @@ func TestCaptchaCasePatternEqual1AndOperand1Equal9AndOperatorEqual1AndOperand1Eq
 		t.Errorf("expect result: %s, actual: %s", expect, result)
 	}
 }
+
+func TestCaptchaCasePatternEqual2AndOperand1Equal1AndOperatorEqual1AndOperand2Equal1(t *testing.T) {
+	expect := "one + 1"
+	result := main.Captcha(2, 1, 1, 1)
+
+	if result != expect {
+		t.Errorf("expect result: %s, actual: %s", expect, result)
+	}
+}
