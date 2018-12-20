@@ -69,3 +69,12 @@ func TestCaptchaPaternOneInputONEONEONESEVENResult1PlusSeven(t *testing.T) {
 		t.Errorf("expect result: %s, actual: %s", expect, result)
 	}
 }
+
+func TestCaptchaPaternOneInputONEONEONEEIGHTResult1PlusEight(t *testing.T) {
+	expect := "1 + eight"
+	result := main.Captcha(1, 1, 1, 8)
+
+	if result != expect {
+		t.Errorf("expect result: %s, actual: %s", expect, result)
+	}
+}
