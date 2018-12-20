@@ -34,6 +34,10 @@ func Captcha(pattern, operand1, operator, operand2 int) string {
 		result = "2 "
 	}
 
+	if operand1 == 3 {
+		result = "3 "
+	}
+
 	if Plus == operator {
 		result += "+ "
 	}
