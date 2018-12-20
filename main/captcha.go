@@ -38,6 +38,10 @@ func Captcha(pattern, operand1, operator, operand2 int) string {
 		result += "- "
 	}
 
+	if Multiply == operator {
+		result += "* "
+	}
+
 	if operand2 == 1 {
 		result += "one"
 	}
