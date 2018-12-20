@@ -1,6 +1,7 @@
 package main_test
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/abcd/captcha/main"
@@ -316,5 +317,15 @@ func TestCaptchaCasePatternEqual2AndOperand1Equal1AndOperatorEqual1AndOperand2Eq
 
 	if result != expect {
 		t.Errorf("expect result: %s, actual: %s", expect, result)
+	}
+}
+
+func TestCalCaptchaCase1PlusOne(t *testing.T) {
+	expect := 2
+	captcha := "1 + one"
+	result := main.CalCaptcha(captcha)
+	fmt.Printf("expect result: %d, actual: %d", expect, result)
+	if result != expect {
+		t.Errorf("expect result: %d, actual: %d", expect, result)
 	}
 }
