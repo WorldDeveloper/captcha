@@ -329,3 +329,11 @@ func TestCalCaptchaCase1PlusOne(t *testing.T) {
 		t.Errorf("expect result: %d, actual: %d", expect, result)
 	}
 }
+func TestCalCaptchaCaseOnePlus2(t *testing.T) {
+	expect := 3
+	captcha := "one + 2"
+	result := main.CalCaptcha(captcha)
+	if result != expect {
+		t.Errorf("expect result: %d, actual: %d", expect, result)
+	}
+}
