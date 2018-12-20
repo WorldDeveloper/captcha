@@ -23,11 +23,14 @@ const (
 	Multiply = 3
 )
 
+const ()
+
 // Captcha xxx
 func Captcha(pattern, operand1, operator, operand2 int) string {
+	NumWords := [...]string{"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"}
 
 	rOperand1 := strconv.Itoa(operand1)
-	rOperand2 := ""
+	rOperand2 := NumWords[operand2-1]
 	rOperator := ""
 
 	if Plus == operator {
@@ -40,42 +43,6 @@ func Captcha(pattern, operand1, operator, operand2 int) string {
 
 	if Multiply == operator {
 		rOperator = "*"
-	}
-
-	if operand2 == 1 {
-		rOperand2 = "one"
-	}
-
-	if operand2 == 2 {
-		rOperand2 = "two"
-	}
-
-	if operand2 == 3 {
-		rOperand2 = "three"
-	}
-
-	if operand2 == 4 {
-		rOperand2 = "four"
-	}
-
-	if operand2 == 5 {
-		rOperand2 = "five"
-	}
-
-	if operand2 == 6 {
-		rOperand2 = "six"
-	}
-
-	if operand2 == 7 {
-		rOperand2 = "seven"
-	}
-
-	if operand2 == 8 {
-		rOperand2 = "eight"
-	}
-
-	if operand2 == 9 {
-		rOperand2 = "nine"
 	}
 
 	if PatternNumOperStr == pattern {
