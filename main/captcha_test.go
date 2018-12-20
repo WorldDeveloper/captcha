@@ -131,3 +131,11 @@ func TestCaptchaCasePatternEqual1AndOperand1Equal1AndOperatorEqual2AndOperand2Eq
 		t.Errorf("expect result: %s, actual: %s", expect, result)
 	}
 }
+func TestCaptchaCasePatternEqual1AndOperand1Equal1AndOperatorEqual2AndOperand2Equal6(t *testing.T) {
+	expect := "1 - six"
+	result := main.Captcha(1, 1, 2, 6)
+
+	if result != expect {
+		t.Errorf("expect result: %s, actual: %s", expect, result)
+	}
+}
