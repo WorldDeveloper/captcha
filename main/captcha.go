@@ -26,8 +26,12 @@ func Captcha(pattern, operand1, operator, operand2 int) string {
 
 	result := ""
 
-	if pattern == 1 && operand1 == 1 {
+	if operand1 == 1 {
 		result = "1 "
+	}
+
+	if operand1 == 2 {
+		result = "2 "
 	}
 
 	if Plus == operator {
