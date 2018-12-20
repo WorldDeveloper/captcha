@@ -35,7 +35,7 @@ func TestCaptchaPatternOneInputONEONEONETHREEResult1PlusThree(t *testing.T) {
 		t.Errorf("expect result: %s, actual: %s", expect, result)
 	}
 }
-func TestCaptchaPatternOneInputONEONEONETHREEResult1PlusFour(t *testing.T) {
+func TestCaptchaPatternOneInputONEONEONEFOUResult1PlusFour(t *testing.T) {
 	expect := "1 + four"
 	result := main.Captcha(1, 1, 1, 4)
 
@@ -43,9 +43,18 @@ func TestCaptchaPatternOneInputONEONEONETHREEResult1PlusFour(t *testing.T) {
 		t.Errorf("expect result: %s, actual: %s", expect, result)
 	}
 }
-func TestCaptchaPatternOneInputONEONEONETHREEResult1PlusFive(t *testing.T) {
+func TestCaptchaPatternOneInputONEONEONEFIVEResult1PlusFive(t *testing.T) {
 	expect := "1 + five"
 	result := main.Captcha(1, 1, 1, 5)
+
+	if result != expect {
+		t.Errorf("expect result: %s, actual: %s", expect, result)
+	}
+}
+
+func TestCaptchaPaternOneInputONEONEONESIXResult1PlusSix(t *testing.T) {
+	expect := "1 + six"
+	result := main.Captcha(1, 1, 1, 6)
 
 	if result != expect {
 		t.Errorf("expect result: %s, actual: %s", expect, result)
