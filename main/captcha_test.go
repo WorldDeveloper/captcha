@@ -241,7 +241,7 @@ func TestCaptchaCasePatternEqual1AndOperand1Equal1AndOperatorEqual3AndOperand2Eq
 	}
 }
 
-func TestCaptchaCasePatternEqual1AndOperand1Equal2AndOperatorEqual1AndOperand2Equal1(t *testing.T) {
+func TestCaptchaCasePatternEqual1AndOperand1Equal2AndOperatorEqual1AndOperand1Equal1(t *testing.T) {
 	expect := "2 + one"
 	result := main.Captcha(1, 2, 1, 1)
 
@@ -250,9 +250,60 @@ func TestCaptchaCasePatternEqual1AndOperand1Equal2AndOperatorEqual1AndOperand2Eq
 	}
 }
 
-func TestCaptchaCasePatternEqual1AndOperand1Equal3AndOperatorEqual1AndOperand2Equal1(t *testing.T) {
+func TestCaptchaCasePatternEqual1AndOperand1Equal3AndOperatorEqual1AndOperand1Equal1(t *testing.T) {
 	expect := "3 + one"
 	result := main.Captcha(1, 3, 1, 1)
+
+	if result != expect {
+		t.Errorf("expect result: %s, actual: %s", expect, result)
+	}
+}
+func TestCaptchaCasePatternEqual1AndOperand1Equal4AndOperatorEqual1AndOperand1Equal1(t *testing.T) {
+	expect := "4 + one"
+	result := main.Captcha(1, 4, 1, 1)
+
+	if result != expect {
+		t.Errorf("expect result: %s, actual: %s", expect, result)
+	}
+}
+
+func TestCaptchaCasePatternEqual1AndOperand1Equal5AndOperatorEqual1AndOperand1Equal1(t *testing.T) {
+	expect := "5 + one"
+	result := main.Captcha(1, 5, 1, 1)
+
+	if result != expect {
+		t.Errorf("expect result: %s, actual: %s", expect, result)
+	}
+}
+func TestCaptchaCasePatternEqual1AndOperand1Equal6AndOperatorEqual1AndOperand1Equal1(t *testing.T) {
+	expect := "6 + one"
+	result := main.Captcha(1, 6, 1, 1)
+
+	if result != expect {
+		t.Errorf("expect result: %s, actual: %s", expect, result)
+	}
+}
+func TestCaptchaCasePatternEqual1AndOperand1Equal7AndOperatorEqual1AndOperand1Equal1(t *testing.T) {
+	expect := "7 + one"
+	result := main.Captcha(1, 7, 1, 1)
+
+	if result != expect {
+		t.Errorf("expect result: %s, actual: %s", expect, result)
+	}
+}
+
+func TestCaptchaCasePatternEqual1AndOperand1Equal8AndOperatorEqual1AndOperand1Equal1(t *testing.T) {
+	expect := "8 + one"
+	result := main.Captcha(1, 8, 1, 1)
+
+	if result != expect {
+		t.Errorf("expect result: %s, actual: %s", expect, result)
+	}
+}
+
+func TestCaptchaCasePatternEqual1AndOperand1Equal9AndOperatorEqual1AndOperand1Equal1(t *testing.T) {
+	expect := "9 + one"
+	result := main.Captcha(1, 9, 1, 1)
 
 	if result != expect {
 		t.Errorf("expect result: %s, actual: %s", expect, result)
