@@ -1,5 +1,7 @@
 package main
 
+import "strconv"
+
 func main() {
 
 	// fmt.Printf("Hello \n World!")
@@ -24,19 +26,8 @@ const (
 // Captcha xxx
 func Captcha(pattern, operand1, operator, operand2 int) string {
 
-	result := ""
-
-	if operand1 == 1 {
-		result = "1 "
-	}
-
-	if operand1 == 2 {
-		result = "2 "
-	}
-
-	if operand1 == 3 {
-		result = "3 "
-	}
+	result := strconv.Itoa(operand1)
+	result += " "
 
 	if Plus == operator {
 		result += "+ "
