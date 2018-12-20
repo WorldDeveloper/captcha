@@ -22,20 +22,48 @@ const (
 )
 
 // Captcha xxx
-func Captcha(pattern, operand1, operator, openrand2 int) string {
+func Captcha(pattern, operand1, operator, operand2 int) string {
 
 	result := ""
 
-	if pattern == 1 && operand1 == 1 && operator == 1 && openrand2 == 1 {
-		return "1 + one"
+	if pattern == 1 && operand1 == 1 && operator == 1 {
+		result = "1 + "
 	}
 
-	if pattern == 1 && operand1 == 1 && operator == 1 && openrand2 == 2 {
-		return "1 + two"
+	if operand2 == 1 {
+		result += "one"
 	}
 
-	if pattern == 1 && operand1 == 1 && operator == 1 && openrand2 == 3 {
-		return "1 + three"
+	if operand2 == 2 {
+		result += "two"
+	}
+
+	if operand2 == 3 {
+		result += "three"
+	}
+
+	if operand2 == 4 {
+		result += "four"
+	}
+
+	if operand2 == 5 {
+		result += "five"
+	}
+
+	if operand2 == 6 {
+		result += "six"
+	}
+
+	if operand2 == 7 {
+		result += "seven"
+	}
+
+	if operand2 == 8 {
+		result += "eight"
+	}
+
+	if operand2 == 9 {
+		result += "nine"
 	}
 
 	return result
