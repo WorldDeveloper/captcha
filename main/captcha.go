@@ -28,22 +28,11 @@ const ()
 // Captcha xxx
 func Captcha(pattern, operand1, operator, operand2 int) string {
 	NumWords := [...]string{"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"}
+	OperatorSighs := [...]string{"+", "-", "*"}
 
 	rOperand1 := strconv.Itoa(operand1)
 	rOperand2 := NumWords[operand2-1]
-	rOperator := ""
-
-	if Plus == operator {
-		rOperator = "+"
-	}
-
-	if Minus == operator {
-		rOperator = "-"
-	}
-
-	if Multiply == operator {
-		rOperator = "*"
-	}
+	rOperator := OperatorSighs[operator-1]
 
 	if PatternNumOperStr == pattern {
 		return rOperand1 + " " + rOperator + " " + rOperand2
