@@ -8,7 +8,7 @@ import (
 
 // syn.Waitgroup
 
-func TestCaptchaPaternOneInputONEONEONEONEResult1PlusOne(t *testing.T) {
+func TestCaptchaCasePatternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equal1(t *testing.T) {
 
 	expect := "1 + one"
 	result := main.Captcha(1, 1, 1, 1)
@@ -18,7 +18,7 @@ func TestCaptchaPaternOneInputONEONEONEONEResult1PlusOne(t *testing.T) {
 	}
 }
 
-func TestCaptchaPatternOneInputONEONEONETWOResult1PlusTwo(t *testing.T) {
+func TestCaptchaCasePatternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equal2(t *testing.T) {
 	expect := "1 + two"
 	result := main.Captcha(1, 1, 1, 2)
 
@@ -27,7 +27,7 @@ func TestCaptchaPatternOneInputONEONEONETWOResult1PlusTwo(t *testing.T) {
 	}
 }
 
-func TestCaptchaPatternOneInputONEONEONETHREEResult1PlusThree(t *testing.T) {
+func TestCaptchaCasePatternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equal3(t *testing.T) {
 	expect := "1 + three"
 	result := main.Captcha(1, 1, 1, 3)
 
@@ -35,7 +35,7 @@ func TestCaptchaPatternOneInputONEONEONETHREEResult1PlusThree(t *testing.T) {
 		t.Errorf("expect result: %s, actual: %s", expect, result)
 	}
 }
-func TestCaptchaPatternOneInputONEONEONEFOUResult1PlusFour(t *testing.T) {
+func TestCaptchaCasePatternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equal4(t *testing.T) {
 	expect := "1 + four"
 	result := main.Captcha(1, 1, 1, 4)
 
@@ -43,7 +43,7 @@ func TestCaptchaPatternOneInputONEONEONEFOUResult1PlusFour(t *testing.T) {
 		t.Errorf("expect result: %s, actual: %s", expect, result)
 	}
 }
-func TestCaptchaPatternOneInputONEONEONEFIVEResult1PlusFive(t *testing.T) {
+func TestCaptchaCasePatternEqualOneAndOperand1Equal1AndOperatorEqual1AndOperand2Equal5(t *testing.T) {
 	expect := "1 + five"
 	result := main.Captcha(1, 1, 1, 5)
 
@@ -52,7 +52,7 @@ func TestCaptchaPatternOneInputONEONEONEFIVEResult1PlusFive(t *testing.T) {
 	}
 }
 
-func TestCaptchaPaternOneInputONEONEONESIXResult1PlusSix(t *testing.T) {
+func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equal6(t *testing.T) {
 	expect := "1 + six"
 	result := main.Captcha(1, 1, 1, 6)
 
@@ -61,7 +61,7 @@ func TestCaptchaPaternOneInputONEONEONESIXResult1PlusSix(t *testing.T) {
 	}
 }
 
-func TestCaptchaPaternOneInputONEONEONESEVENResult1PlusSeven(t *testing.T) {
+func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual1AndOperandEqual7(t *testing.T) {
 	expect := "1 + seven"
 	result := main.Captcha(1, 1, 1, 7)
 
@@ -70,7 +70,7 @@ func TestCaptchaPaternOneInputONEONEONESEVENResult1PlusSeven(t *testing.T) {
 	}
 }
 
-func TestCaptchaPaternOneInputONEONEONEEIGHTResult1PlusEight(t *testing.T) {
+func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equal8(t *testing.T) {
 	expect := "1 + eight"
 	result := main.Captcha(1, 1, 1, 8)
 
@@ -79,7 +79,7 @@ func TestCaptchaPaternOneInputONEONEONEEIGHTResult1PlusEight(t *testing.T) {
 	}
 }
 
-func TestCaptchaPaternOneInputONEONEONENINEResult1PlusNine(t *testing.T) {
+func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual1AndOperand2Equal9(t *testing.T) {
 	expect := "1 + nine"
 	result := main.Captcha(1, 1, 1, 9)
 
@@ -88,7 +88,7 @@ func TestCaptchaPaternOneInputONEONEONENINEResult1PlusNine(t *testing.T) {
 	}
 }
 
-func TestCaptchaPaternOneInputONEONETWOONEResult1MinusOne(t *testing.T) {
+func TestCaptchaCasePaternEqual1AndOperand1Equal1AndOperatorEqual2AndOperand2Equal1(t *testing.T) {
 	expect := "1 - one"
 	result := main.Captcha(1, 1, 2, 1)
 
