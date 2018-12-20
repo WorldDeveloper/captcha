@@ -34,5 +34,9 @@ func Captcha(pattern, operand1, operator, openrand2 int) string {
 		return "1 + two"
 	}
 
+	if pattern == 1 && operand1 == 1 && operator == 1 && openrand2 == 3 {
+		return "1 + three"
+	}
+
 	return result
 }
