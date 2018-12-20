@@ -15,10 +15,10 @@ const (
 const (
 	// Plus xxx
 	Plus = 1
-	// MINUS xxx
-	MINUS = 2
-	// MULTIPLY xxx
-	MULTIPLY = 3
+	// Minus xxx
+	Minus = 2
+	// Multiply xxx
+	Multiply = 3
 )
 
 // Captcha xxx
@@ -26,8 +26,16 @@ func Captcha(pattern, operand1, operator, operand2 int) string {
 
 	result := ""
 
-	if pattern == 1 && operand1 == 1 && operator == 1 {
-		result = "1 + "
+	if pattern == 1 && operand1 == 1 {
+		result = "1 "
+	}
+
+	if Plus == operator {
+		result += "+ "
+	}
+
+	if Minus == operator {
+		result += "- "
 	}
 
 	if operand2 == 1 {
